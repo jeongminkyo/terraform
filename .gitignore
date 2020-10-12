@@ -1,0 +1,13 @@
+.envrc
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+plan
+crash.log
+*.backup
+inventory
+playbook.retry
+credentials.json
+.idea/
+temp/
+*.retry
