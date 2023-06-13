@@ -3,7 +3,8 @@ services/**/env/**/.terraform/
 services/**/env/**/terraform.tfstate
 services/**/env/**/terraform.tfstate.backup
 services/**/env/**/plan
-services/**/backup/
+services/**/backup/database/*
+services/**/backup/account/*
 ssh/*-ssh-key*
 crash.log
 *.backup
