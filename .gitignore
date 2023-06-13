@@ -1,8 +1,10 @@
 .envrc
-.terraform/
-terraform.tfstate
-terraform.tfstate.backup
-plan
+services/**/env/**/.terraform/
+services/**/env/**/terraform.tfstate
+services/**/env/**/terraform.tfstate.backup
+services/**/env/**/plan
+services/**/backup/
+ssh/*-ssh-key*
 crash.log
 *.backup
 inventory
