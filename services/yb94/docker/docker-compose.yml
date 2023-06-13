@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    image: redwonder/yb94-rails:latest
+    container_name: rails
+    volumes:
+      - ./log/app:/var/www/yb94/log
+  web:
+    image: redwonder/yb94-nginx:latest
+    container_name: nginx
+    volumes:
+      - ./log/web:/var/www/yb94/log
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+
